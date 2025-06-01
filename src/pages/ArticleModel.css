@@ -1,0 +1,16 @@
+.ArticleTitle {
+    text-align: left;
+    font-size: 6rem;
+    padding-left: 40px;
+}
+
+.Subtitle {
+    padding-top: 0px;
+    padding-bottom: 20px;
+}
+
+
+.ArticleText {
+    font-size: 1.5rem;
+    padding-bottom: 60px;
+}
