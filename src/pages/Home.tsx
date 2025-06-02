@@ -1,6 +1,8 @@
 import ImageBox from '../components/ImageBox'
 import './Home.css'
 
+import chatGPT from '../assets/chatGPT.png'
+
 function Home() {
   return (
     <>
@@ -12,12 +14,12 @@ function Home() {
         <h2>Principais Artigos</h2>
     </div>
     <div className='ImageBoxDiv'>
-        <ImageBox/>
-        <ImageBox/>
-        <ImageBox/>
-        <ImageBox/>
-        <ImageBox/>
-        <ImageBox/>
+        <ImageBox title='Artigo 1' link='/article' image={chatGPT} />
+        <ImageBox title='Artigo 2' link='/' image='' />
+        <ImageBox title='Artigo 3' link='/' image='' />
+        <ImageBox title='Artigo 4' link='/' image='' />
+        <ImageBox title='Artigo 5' link='/' image='' />
+        <ImageBox title='Artigo 6' link='/' image='' />
     </div>
     </>
   )
