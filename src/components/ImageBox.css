@@ -3,7 +3,7 @@
 	width: 30vw;
 	height: 450px;
 	background-color: aqua;
-	padding: 10px;
+	padding: 0;
 	border: 0;
 	margin: 0;
 	box-sizing: border-box;
@@ -13,6 +13,24 @@
 
 .ImageBox:hover {
 	width: 100%;
+}
+
+.ImageBoxX::after {
+	content: '';
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	height: 30%; /* altura do gradiente */
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.6), transparent);
+	pointer-events: none;
+}
+
+.ImageBoxTextDiv {
+	background: linear-gradient(to top, rgba(0, 0, 0, 0.8), transparent);
+	width: 100%;
+	padding: 10px;
+	padding-top: 40px;
+	text-align: left;
 }
 
 .IBTitle {
