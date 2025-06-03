@@ -17,7 +17,9 @@ export const ImageBox: FC<ImageBoxProps> = ({title, link, image}) => {
 				backgroundSize: 'cover',
 				backgroundPosition: 'center',
 			}}>
-        <Link className="IBTitle" to={link} >{title}</Link>
+        <div className="ImageBoxTextDiv">
+          <Link className="IBTitle" to={link} >{title}</Link>
+        </div>
     </div>
     </>
   )
