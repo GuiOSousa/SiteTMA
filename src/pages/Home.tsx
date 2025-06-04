@@ -1,4 +1,5 @@
 import ImageBox from '../components/ImageBox'
+import NavigationBar from '../components/NavigationBar'
 import './Home.css'
 
 import chatGPT from '../assets/chatGPT.png'
@@ -6,6 +7,7 @@ import chatGPT from '../assets/chatGPT.png'
 function Home() {
   return (
     <>
+    <NavigationBar/>
     <div className='HeaderPH'>
         <p>HEADER PLACEHOLDER</p>
     </div>
