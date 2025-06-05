@@ -14,4 +14,17 @@ function NavigationBar() {
   )
 }
 
+export function HomeNavigationBar() {
+  return (
+    <>
+    <div className="HomeNavBar">
+        <Link className="NavLink" to='/'>Home</Link>
+        <Link className="NavLink" to='/articles'>Artigos</Link>
+        <Link className="NavLink" to='/posters'>Cartazes</Link>
+        <Link className="NavLink" to='/about'>Sobre</Link>
+    </div>
+    </>
+  )
+}
+
 export default NavigationBar
