@@ -51,14 +51,6 @@ h2 {
     font-size: 3rem;
 }
 
-.Header {
-    background-image: url("../assets/homeHeader.png");
-    background-size: cover;
-    width: 100%;
-    height: 380px;
-    display: flex;
-}
-
 .LeftDiv {
     display: flex;
     max-width: 50vw;
