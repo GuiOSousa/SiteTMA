@@ -1,0 +1,22 @@
+.Header {
+    background-image: url("../assets/homeHeader.png");
+    background-size: cover;
+    width: 100%;
+    height: 380px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+
+.HeaderDiv {
+    height: 100%;
+}
+
+.HeaderFade {
+	background: linear-gradient(to top, var(--main-color-b), transparent);
+	width: 100%;
+	padding: 10px;
+	padding-top: 100px;
+	text-align: left;
+    
+}

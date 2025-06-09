@@ -1,16 +1,14 @@
 import ImageBox from '../components/ImageBox'
-import { HomeNavigationBar } from '../components/NavigationBar'
 import './Home.css'
 
 import chatGPT from '../assets/chatGPT.png'
+import Header from '../components/HomeHeader'
 
 function Home() {
   return (
     <>
-    <div className='Header'>
-        <HomeNavigationBar/>
-    </div>
-    <h1>Impacto Ambiental das IAs</h1>
+    <Header/>
+    <h1>Nome do Site</h1>
     <div className='LeftDiv'>
         <h2>Principais Artigos</h2>
     </div>
