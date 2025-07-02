@@ -13,7 +13,7 @@ function Home() {
         <h2>Principais Artigos</h2>
     </div>
     <div className='ImageBoxDiv'>
-        <ImageBox title='Artigo 1' link='/article' image={chatGPT} />
+        <ImageBox title='Artigo 1' link='/articleAICost' image={chatGPT} />
         <ImageBox title='Artigo 2' link='/' image='' />
         <ImageBox title='Artigo 3' link='/' image='' />
         <ImageBox title='Artigo 4' link='/' image='' />

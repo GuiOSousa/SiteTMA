@@ -6,6 +6,7 @@ function ArticleModel() {
     <>
     <NavigationBar/>
     <h1 className='ArticleTitle'>Título do Artigo</h1>
+    <p className='ArticleAuthor'>por: Autor</p>
     <h2 className='Subtitle'>Subtítulo da Seção</h2>
     <p className='ArticleText'>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec luctus congue lorem, eget lobortis metus gravida quis. In volutpat orci quis pharetra gravida. Donec id placerat dui. Mauris a sollicitudin orci. Cras lacinia cursus eros, eu condimentum eros tempus ac. Phasellus at nisl in ligula consectetur tincidunt. Etiam tellus ante, lacinia in sem dignissim, gravida dapibus erat. Donec lobortis nibh vitae dui suscipit congue. Nulla facilisi. Quisque tristique felis arcu, id bibendum justo consequat faucibus. Donec eleifend risus sed tincidunt finibus.
 
