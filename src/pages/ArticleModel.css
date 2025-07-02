@@ -5,6 +5,12 @@
     padding-left: 40px;
 }
 
+.ArticleAuthor {
+    text-align: left;
+    padding-left: 60px;
+    font-size: 1.25rem;
+}
+
 .Subtitle {
     padding-top: 0px;
     padding-bottom: 20px;
@@ -12,6 +18,8 @@
 
 
 .ArticleText {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
 }
