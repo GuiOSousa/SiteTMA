@@ -67,3 +67,7 @@ h2 {
   align-self: center;
   justify-items: center;
 }
+
+.Space {
+    height: 40px;
+}
