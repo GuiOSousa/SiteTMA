@@ -51,11 +51,24 @@ h2 {
     font-size: 3rem;
 }
 
+p {
+    font-size: 1.75rem;
+}
+
 .LeftDiv {
     display: flex;
-    max-width: 50vw;
     padding: 20px;
     padding-top: 80px;
+    flex-direction: column;
+    text-align: left;
+}
+
+.RightDiv {
+    display: flex;
+    padding: 20px;
+    padding-top: 80px;
+    flex-direction: column;
+    text-align: right;
 }
 
 .ImageBoxDiv {
