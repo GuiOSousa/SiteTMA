@@ -55,6 +55,34 @@ p {
     font-size: 1.75rem;
 }
 
+.HomeTitle {
+    font-size: 7rem;
+    color: #DDDDDD;
+    padding-bottom: 0px;
+}
+
+.HomeSubtitle {
+    font-size: 1.5rem;
+    color: #DDDDDD;
+    padding-top: 0px;
+    padding-bottom: 24px;
+}
+
+.ColorDiv {
+    display: flex;
+    padding: 20px;
+    padding-top: 80px;
+    flex-direction: column;
+    text-align: center;
+    background-color: var(--main-color-b);
+}
+
+.CenteredDiv {
+    display: flex;
+    gap: 12rem;
+    justify-content: center;
+}
+
 .LeftDiv {
     display: flex;
     padding: 20px;
