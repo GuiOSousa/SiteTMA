@@ -1,0 +1,28 @@
+@import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+.HomeIconDiv {
+    display: flex;
+    flex-direction: column;
+	width: 15vw;
+	padding: 0;
+	border: 0;
+	margin: 0;
+	box-sizing: border-box;
+	justify-content: center;
+	align-items: center;
+}
+
+.HomeIcon {
+	height: 200px;
+}
+
+.IconTitle {
+	color: var(--background-color);
+	font-size: 2.5rem;
+    text-decoration: none;
+}
+
+.material-icons {
+    color: var(--background-color);
+    font-size: 200px;
+}

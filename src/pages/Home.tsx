@@ -1,14 +1,24 @@
 import ImageBox from '../components/ImageBox'
 import './Home.css'
+import Header from '../components/HomeHeader'
+import HomeIcon from '../components/HomeIcon'
 
 import chatGPT from '../assets/chatGPT.png'
-import Header from '../components/HomeHeader'
+
 
 function Home() {
   return (
     <>
     <Header/>
-    <h1>Nome do Site</h1>
+    <div className='ColorDiv'>
+      <h1 className='HomeTitle'>EcoTech</h1>
+      <p className='HomeSubtitle'>Tecnologia e Meio Ambiente</p>
+      <div className='CenteredDiv'>
+        <HomeIcon title="Artigos" link='/articles' image='article'/>
+        <HomeIcon title="Cartazes" link='/posters' image='assignment_ind'/>
+        <HomeIcon title="Sobre" link='/about' image='info'/>
+      </div>
+    </div>
     <div className='LeftDiv'>
         <h2>Principais Artigos</h2>
     </div>
