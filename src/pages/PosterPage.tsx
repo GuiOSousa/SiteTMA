@@ -1,14 +1,15 @@
 import NavigationBar from "../components/NavigationBar"
 import { ImageGrid } from "../components/PosterGrid"
 import ChatGPT from '../assets/chatGPT.png'
+import ChatPoster from '../assets/chatPoster.jpg'
 
 const sampleImages = [
+    ChatPoster,
     ChatGPT,
-	"https://picsum.photos/id/1011/400/300",
-	"https://picsum.photos/id/1012/400/300",
-	"https://picsum.photos/id/1013/400/300",
-	"https://picsum.photos/id/1015/400/300",
-	"https://picsum.photos/id/1016/400/300",
+    ChatGPT,
+    ChatGPT,
+    ChatGPT,
+    ChatGPT,
 ];
 
 
