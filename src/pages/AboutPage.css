@@ -1,0 +1,11 @@
+.CollaboratorInfoGrid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+	gap: 16px;
+	padding: 20px;
+    text-align: center;
+    align-self: center;
+    justify-items: center;
+    max-width: 100%;
+    box-sizing: border-box;
+}
