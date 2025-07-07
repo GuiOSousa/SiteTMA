@@ -27,11 +27,10 @@ function ArticleAICost() {
       É imprescindível que corporações detentoras de LLM's se projetem para alimentar seus modelos com energia sustentável e reduzam o custo de água para mantê-los funcionando.
     </p>
     <h2 className='Subtitle'>Fontes</h2>
-    <p className='ArticleText'>https://www.ufsm.br/pet/sistemas-de-informacao/2024/10/21/o-impacto-ambiental-das-inteligencias-artificiais<br/>
-    https://explodingtopics.com/blog/chatgpt-users<br/>
-    https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence?utm_source=chatgpt.com<br/>
-    https://www.cnnbrasil.com.br/tecnologia/chatgpt-gasta-uma-garrafa-dagua-a-cada-100-palavras-geradas-diz-pesquisa/<br/>
-    </p>
+    <a className='ArticleLink' href='https://www.ufsm.br/pet/sistemas-de-informacao/2024/10/21/o-impacto-ambiental-das-inteligencias-artificiais'>https://www.ufsm.br/pet/sistemas-de-informacao/2024/10/21/o-impacto-ambiental-das-inteligencias-artificiais</a> <br></br>
+    <a className='ArticleLink' href= 'https://explodingtopics.com/blog/chatgpt-users'>https://explodingtopics.com/blog/chatgpt-users</a> <br></br>
+    <a className='ArticleLink' href='https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence?utm_source=chatgpt.com'>https://en.wikipedia.org/wiki/Environmental_impact_of_artificial_intelligence?utm_source=chatgpt.com</a> <br></br>
+    <a className='ArticleLink' href='https://www.cnnbrasil.com.br/tecnologia/chatgpt-gasta-uma-garrafa-dagua-a-cada-100-palavras-geradas-diz-pesquisa/'>https://www.cnnbrasil.com.br/tecnologia/chatgpt-gasta-uma-garrafa-dagua-a-cada-100-palavras-geradas-diz-pesquisa/</a> <br></br>
     </>
   )
 }
