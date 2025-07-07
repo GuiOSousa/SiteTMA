@@ -13,7 +13,7 @@ export const HomeIcon: FC<HomeIconProps> = ({title, link, image}) => {
   return (
     <>
     <div className="HomeIconDiv">
-    <i className="material-icons">{image}</i>
+    <i className="material-icons IconColor">{image}</i>
     <Link className="IconTitle" to={link} >{title}</Link>
     </div>
     </>

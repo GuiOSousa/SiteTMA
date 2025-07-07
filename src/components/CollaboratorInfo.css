@@ -1,0 +1,21 @@
+.CollaboratorInfo {
+    display: flex;
+    flex-direction: column;
+}
+
+.AboutIconColor {
+    color:var(--main-color);
+}
+
+.CollaboratorName {
+    font-size: 2rem;
+}
+
+.CollaboratorDesc {
+    font-size: 1.5rem;
+    color: var(--main-color-b);
+}
+
+.CollaboratorLink {
+    color: var(--main-color-b);
+}
