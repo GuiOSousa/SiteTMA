@@ -23,3 +23,12 @@
     padding-left: 60px;
     padding-right: 60px;
 }
+
+.ArticleLink {
+    font-size: 1.5rem;
+    padding-bottom: 60px;
+    padding-left: 60px;
+    padding-right: 60px;
+    word-break: break-word;
+    text-align: none;
+}
