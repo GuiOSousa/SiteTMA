@@ -5,7 +5,7 @@ import PosterPage from "./pages/PosterPage";
 import AboutPage from "./pages/AboutPage";
 
 import ArticleAICost from "./pages/articles/ArticleAICost";
-
+import ArticleCrypto from "./pages/articles/ArticleCrypto";
 
 function App() {
   return (
@@ -16,6 +16,7 @@ function App() {
         <Route path="/about" element={<AboutPage/>} />
 
         <Route path="/articleAICost" element={<ArticleAICost/>} />
+        <Route path="/articleCrypto" element={<ArticleCrypto/>} />
 			</Routes>
   )
 }
