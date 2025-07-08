@@ -4,7 +4,7 @@ import Header from '../components/HomeHeader'
 import HomeIcon from '../components/HomeIcon'
 
 import chatGPT from '../assets/chatGPT.png'
-
+import crypto from '../assets/crypto01.jpg'
 
 function Home() {
   return (
@@ -24,7 +24,7 @@ function Home() {
     </div>
     <div className='ImageBoxDiv'>
         <ImageBox title="O Impacto Ambiental das IA's" link='/articleAICost' image={chatGPT} />
-        <ImageBox title='Artigo 2' link='/' image='' />
+        <ImageBox title='Criptomoedas e Seu Alto Custo Energético' link='/articleCrypto' image={crypto} />
         <ImageBox title='Artigo 3' link='/' image='' />
         <ImageBox title='Artigo 4' link='/' image='' />
         <ImageBox title='Artigo 5' link='/' image='' />
