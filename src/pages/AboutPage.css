@@ -9,3 +9,13 @@
     max-width: 100%;
     box-sizing: border-box;
 }
+
+.ICTLogo {
+    width: 250px;
+    align-self: center;
+}
+
+.ICTLink {
+    text-decoration: none;
+    color: var(--main-color-b);
+}
