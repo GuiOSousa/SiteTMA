@@ -2,6 +2,8 @@ import CollaboratorInfo from "../components/CollaboratorInfo"
 import NavigationBar from "../components/NavigationBar"
 import './AboutPage.css'
 
+import sociedadeICT from '../assets/sociedadesustentavel.ict.png'
+
 function AboutPage() {
     return(
         <>
@@ -19,6 +21,15 @@ function AboutPage() {
                 Para atingirmos este objetivo, combinamos os conteúdos desse site com cartazes chamativos e interessantes, espalhados pelos mais diversos lugares, trazendo todo tipo de pessoa para cá.
             </p>
         </div>
+        <div className='LeftDiv'>
+            <h2>Sociedade Sustentável & Meio Ambiente</h2>
+            <p>Este site faz parte do projeto "Sociedade Sustentável & Meio Ambiente" da UNIFESP. Desenvolvido por alunos do ICT, o
+                <a href="https://www.instagram.com/sociedadesustentavel.ict/" className="ICTLink"> @sociedadesustentavel.ict </a>
+            é composto por inúmeros subprojetos abordando os mais variados temas de Sustentabilidade.
+            </p>
+        <img src={sociedadeICT} className="ICTLogo"></img>
+        </div>
+       
         <h2>A Equipe</h2>
         <div className="CollaboratorInfoGrid">
             <CollaboratorInfo icon="account_circle" name="Guilherme Sousa" description="Desenvolvedor, Autor" gitHub="https://github.com/GuiOSousa"/>
