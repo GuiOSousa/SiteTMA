@@ -54,4 +54,4 @@ function ArticleDigitalRecycling() {
   )
 }
 
-export default ArticleAICost
+export default ArticleDigitalRecycling

@@ -25,7 +25,7 @@ function Home() {
     <div className='ImageBoxDiv'>
         <ImageBox title="O Impacto Ambiental das IA's" link='/articleAICost' image={chatGPT} />
         <ImageBox title='Criptomoedas e Seu Alto Custo Energético' link='/articleCrypto' image={crypto} />
-        <ImageBox title='Artigo 3' link='/' image='' />
+        <ImageBox title='A Ilusão da “Reciclagem Digital”' link='/articleDigitalRecycling' image='' />
         <ImageBox title='Artigo 4' link='/' image='' />
         <ImageBox title='Artigo 5' link='/' image='' />
         <ImageBox title='Artigo 6' link='/' image='' />
