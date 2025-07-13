@@ -1,0 +1,36 @@
+/* Estilos específicos para a página de artigos */
+.ArticlePage {
+  padding-top: 80px; /* Espaçamento para evitar que a NavigationBar cubra o conteúdo */
+}
+
+.ArticlePage h1 {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+.ArticlePage .Space {
+  height: 40px;
+}
+
+/* Media Queries para responsividade */
+@media (max-width: 768px) {
+  .ArticlePage {
+    padding-top: 70px;
+  }
+
+  .ArticlePage h1 {
+    margin-top: 15px;
+    margin-bottom: 25px;
+  }
+}
+
+@media (max-width: 480px) {
+  .ArticlePage {
+    padding-top: 60px;
+  }
+
+  .ArticlePage h1 {
+    margin-top: 10px;
+    margin-bottom: 20px;
+  }
+}

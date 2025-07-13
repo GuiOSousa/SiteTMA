@@ -1,27 +1,132 @@
 .NavBar {
-    display: flex;
-    width: 100%;
-    background-color: var(--main-color-b);
-    text-align: left;
-    padding: 10px;
-    box-sizing: border-box;
-    justify-content: center;
-    gap: 15%;
+  display: flex;
+  width: 100%;
+  background-color: var(--main-color-b);
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
 }
 
 .HomeNavBar {
-    display: flex;
-    width: 100%;
-    height: fit-content;
-    text-align: left;
-    padding: 10px;
-    box-sizing: border-box;
-    justify-content: center;
-    gap: 15%;
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 20px 0;
+  box-sizing: border-box;
+  justify-content: center;
+  gap: 60px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background-color: var(--main-color-b);
 }
 
 .NavLink {
-    font-size: 1.25rem;
-    text-decoration: none;
-    color: white;
+  font-size: 1.4rem;
+  font-weight: 500;
+  text-decoration: none;
+  color: white;
+  padding: 12px 20px;
+  border-radius: 8px;
+  transition: all 0.3s ease;
+  position: relative;
+  overflow: hidden;
+}
+
+.NavLink::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s ease;
+}
+
+.NavLink:hover {
+  background-color: rgba(16, 128, 72);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.NavLink:hover::before {
+  left: 100%;
+}
+
+.NavLink:active {
+  transform: translateY(0);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* Media Queries para Responsividade da NavigationBar */
+@media (max-width: 1024px) {
+  .NavBar,
+  .HomeNavBar {
+    gap: 40px;
+    padding: 18px 0;
+  }
+
+  .NavLink {
+    font-size: 1.3rem;
+    padding: 10px 16px;
+  }
+}
+
+@media (max-width: 768px) {
+  .NavBar,
+  .HomeNavBar {
+    gap: 25px;
+    padding: 15px 0;
+  }
+
+  .NavLink {
+    font-size: 1.2rem;
+    padding: 8px 12px;
+  }
+}
+
+@media (max-width: 480px) {
+  .NavBar,
+  .HomeNavBar {
+    gap: 15px;
+    padding: 12px 0;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+
+  .NavLink {
+    font-size: 1.1rem;
+    padding: 6px 10px;
+    margin: 2px;
+  }
+}
+
+@media (max-width: 360px) {
+  .NavBar,
+  .HomeNavBar {
+    gap: 10px;
+    padding: 10px 0;
+  }
+
+  .NavLink {
+    font-size: 1rem;
+    padding: 5px 8px;
+  }
 }

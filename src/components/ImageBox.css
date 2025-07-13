@@ -9,10 +9,12 @@
 	box-sizing: border-box;
 	justify-content: left;
 	align-items: end;
+	border-radius: 8px;
 }
 
 .ImageBox:hover {
-	width: 100%;
+	transition: scale 0.1s ease-in-out;
+	scale: 1.02;
 }
 
 .ImageBoxX::after {
@@ -37,4 +39,52 @@
 	color: var(--background-color);
 	font-size: 2.5rem;
     text-decoration: none;
+}
+
+/* Media Queries para Responsividade do ImageBox */
+@media (max-width: 1200px) {
+    .ImageBox {
+        width: 28vw;
+        height: 400px;
+    }
+    
+    .IBTitle {
+        font-size: 2.25rem;
+    }
+}
+
+@media (max-width: 768px) {
+    .ImageBox {
+        width: 80vw;
+        height: 350px;
+    }
+    
+    .IBTitle {
+        font-size: 2rem;
+    }
+    
+    .ImageBoxTextDiv {
+        padding: 8px;
+        padding-top: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .ImageBox {
+        width: 90vw;
+        height: 300px;
+    }
+    
+    .IBTitle {
+        font-size: 1.75rem;
+    }
+    
+    .ImageBoxTextDiv {
+        padding: 6px;
+        padding-top: 25px;
+    }
+}
+
+@keyframes easeIn {
+	0% {
 }

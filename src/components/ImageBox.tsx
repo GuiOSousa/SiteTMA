@@ -11,17 +11,17 @@ interface ImageBoxProps {
 
 export const ImageBox: FC<ImageBoxProps> = ({title, link, image}) => {
   return (
-    <>
+    <Link to={link} style={{textDecoration: 'none'}}>
     <div className='ImageBox' style={{
 				backgroundImage: `url(${image})`,
 				backgroundSize: 'cover',
 				backgroundPosition: 'center',
 			}}>
         <div className="ImageBoxTextDiv">
-          <Link className="IBTitle" to={link} >{title}</Link>
+          <div className="IBTitle" >{title}</div>
         </div>
     </div>
-    </>
+    </Link>
   )
 }
 

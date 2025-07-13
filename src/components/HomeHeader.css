@@ -14,9 +14,30 @@
 
 .HeaderFade {
 	background: linear-gradient(to top, var(--main-color-b), transparent);
-
 	padding: 10px;
 	padding-top: 100px;
 	text-align: left;
+}
+
+/* Media Queries para Responsividade do HomeHeader */
+@media (max-width: 768px) {
+    .Header {
+        height: 300px;
+    }
     
+    .HeaderFade {
+        padding: 8px;
+        padding-top: 80px;
+    }
+}
+
+@media (max-width: 480px) {
+    .Header {
+        height: 250px;
+    }
+    
+    .HeaderFade {
+        padding: 6px;
+        padding-top: 60px;
+    }
 }
