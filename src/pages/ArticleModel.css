@@ -1,34 +1,211 @@
 .ArticleTitle {
-    padding-top: 60px;
+    padding-top: 120px;
     text-align: left;
     font-size: 6rem;
     padding-left: 40px;
+    padding-right: 40px;
+    line-height: 1.2;
+    margin-bottom: 20px;
+    margin-top: 60px;
 }
 
 .ArticleAuthor {
-    text-align: left;
-    padding-left: 60px;
-    font-size: 1.25rem;
+  text-align: left;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 1.25rem;
+  margin-bottom: 40px;
+  color: #666;
 }
 
 .Subtitle {
-    padding-top: 0px;
-    padding-bottom: 20px;
+  padding-top: 0px;
+  padding-bottom: 20px;
+  padding-left: 60px;
+  padding-right: 60px;
+  font-size: 2.5rem;
+  color: var(--main-color-b);
+  margin-top: 40px;
 }
 
-
 .ArticleText {
-    font-size: 1.75rem;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
+  font-size: 1.75rem;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  line-height: 1.6;
+  text-align: justify;
 }
 
 .ArticleLink {
-    font-size: 1.5rem;
-    padding-bottom: 60px;
-    padding-left: 60px;
-    padding-right: 60px;
-    word-break: break-word;
-    text-align: none;
+  font-size: 1.5rem;
+  padding-bottom: 60px;
+  padding-left: 60px;
+  padding-right: 60px;
+  word-break: break-word;
+  text-align: left;
+  display: block;
+  color: var(--main-color-b);
+  text-decoration: none;
+  margin-bottom: 20px;
+}
+
+.ArticleLink:hover {
+  text-decoration: underline;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e telas médias */
+@media (max-width: 1200px) {
+    .ArticleTitle {
+        font-size: 5rem;
+        padding-left: 30px;
+        padding-right: 30px;
+        padding-top: 100px;
+        margin-top: 50px;
+    }
+
+  .ArticleAuthor {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 1.2rem;
+  }
+
+  .Subtitle {
+    padding-left: 40px;
+    padding-right: 40px;
+    font-size: 2.2rem;
+  }
+
+  .ArticleText {
+    font-size: 1.6rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+
+  .ArticleLink {
+    font-size: 1.4rem;
+    padding-left: 40px;
+    padding-right: 40px;
+  }
+}
+
+/* Tablets pequenos */
+@media (max-width: 768px) {
+    .ArticleTitle {
+        font-size: 4rem;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-top: 80px;
+        margin-top: 40px;
+        text-align: center;
+    }
+
+  .ArticleAuthor {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 1.1rem;
+    text-align: center;
+  }
+
+  .Subtitle {
+    padding-left: 30px;
+    padding-right: 30px;
+    font-size: 2rem;
+    text-align: center;
+  }
+
+  .ArticleText {
+    font-size: 1.4rem;
+    padding-left: 30px;
+    padding-right: 30px;
+    text-align: left;
+  }
+
+  .ArticleLink {
+    font-size: 1.2rem;
+    padding-left: 30px;
+    padding-right: 30px;
+  }
+}
+
+/* Dispositivos móveis */
+@media (max-width: 480px) {
+    .ArticleTitle {
+        font-size: 3rem;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 70px;
+        margin-top: 30px;
+        line-height: 1.1;
+    }
+
+  .ArticleAuthor {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1rem;
+    margin-bottom: 30px;
+  }
+
+  .Subtitle {
+    padding-left: 20px;
+    padding-right: 20px;
+    font-size: 1.8rem;
+    margin-top: 30px;
+  }
+
+  .ArticleText {
+    font-size: 1.2rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+    line-height: 1.5;
+  }
+
+  .ArticleLink {
+    font-size: 1rem;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-bottom: 40px;
+  }
+}
+
+/* Dispositivos muito pequenos */
+@media (max-width: 320px) {
+    .ArticleTitle {
+        font-size: 2.5rem;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-top: 60px;
+        margin-top: 25px;
+    }
+
+  .ArticleAuthor {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 0.9rem;
+    margin-bottom: 25px;
+  }
+
+  .Subtitle {
+    padding-left: 15px;
+    padding-right: 15px;
+    font-size: 1.6rem;
+    margin-top: 25px;
+  }
+
+  .ArticleText {
+    font-size: 1.1rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+  }
+
+  .ArticleLink {
+    font-size: 0.9rem;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: 30px;
+  }
 }

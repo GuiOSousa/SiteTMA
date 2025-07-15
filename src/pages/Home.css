@@ -1,102 +1,248 @@
-@import 'https://fonts.googleapis.com/css2?family=Roboto&family=WDXL+Lubrifont+TC&display=swap';
+@import "https://fonts.googleapis.com/css2?family=Roboto&family=WDXL+Lubrifont+TC&display=swap";
 
 :root {
-    --background-color: #DDDDDD;
-    --main-color: #10a348;
-    --main-color-b: #108048;
+  --background-color: #dddddd;
+  --main-color: #10a348;
+  --main-color-b: #108048;
 }
 
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-	font: inherit;
-	vertical-align: baseline;
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
 
 #root {
-    width: 100%;
-    font-family: "WDXL Lubrifont TC", sans-serif;
-    font-weight: 400;
-    font-style: normal;
+  width: 100%;
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
 body {
-    background-color: var(--background-color);
-    display: flex;
-    flex-direction: column;
-    text-align: center;
+  background-color: var(--background-color);
+  display: flex;
+  flex-direction: column;
+  text-align: center;
 }
 
 h1 {
-    color: var(--main-color);
-    font-size: 5rem;
+  color: var(--main-color);
+  font-size: 5rem;
 }
 
 h2 {
-    color: var(--main-color-b);
-    font-size: 3rem;
+  color: var(--main-color-b);
+  font-size: 3rem;
 }
 
 p {
-    font-size: 1.75rem;
+  font-size: 1.75rem;
 }
 
 .HomeTitle {
-    font-size: 7rem;
-    color: #DDDDDD;
-    padding-bottom: 0px;
+  font-size: 7rem;
+  color: #dddddd;
+  padding-bottom: 0px;
 }
 
 .HomeSubtitle {
-    font-size: 1.5rem;
-    color: #DDDDDD;
-    padding-top: 0px;
-    padding-bottom: 24px;
+  font-size: 1.5rem;
+  color: #dddddd;
+  padding-top: 0px;
+  padding-bottom: 24px;
 }
 
 .ColorDiv {
-    display: flex;
-    padding: 20px;
-    padding-top: 80px;
-    flex-direction: column;
-    text-align: center;
-    background-color: var(--main-color-b);
+  display: flex;
+  padding: 20px;
+  padding-top: 80px;
+  flex-direction: column;
+  text-align: center;
+  background-color: var(--main-color-b);
 }
 
 .CenteredDiv {
-    display: flex;
-    gap: 12rem;
-    justify-content: center;
+  display: flex;
+  gap: 3rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.NavigationButton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem 3rem;
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(255, 255, 255, 0.05) 100%
+  );
+  border: 2px solid rgba(255, 255, 255, 0.2);
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  text-decoration: none;
+  color: var(--background-color);
+  transition: all 0.3s ease;
+  min-width: 200px;
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+  position: relative;
+  overflow: hidden;
+}
+
+.NavigationButton::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: -100%;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent,
+    rgba(255, 255, 255, 0.2),
+    transparent
+  );
+  transition: left 0.5s;
+}
+
+.NavigationButton:hover::before {
+  left: 100%;
+}
+
+.NavigationButton:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.2);
+  border-color: rgba(255, 255, 255, 0.4);
+  background: linear-gradient(
+    135deg,
+    rgba(255, 255, 255, 0.15) 0%,
+    rgba(255, 255, 255, 0.08) 100%
+  );
+}
+
+.NavigationButton:active {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.NavigationButton i {
+  font-size: 3.5rem;
+  margin-bottom: 1rem;
+  transition: transform 0.3s ease;
+}
+
+.NavigationButton:hover i {
+  transform: scale(1.1);
+}
+
+.NavigationButton span {
+  font-size: 1.5rem;
+  font-weight: 500;
+  text-align: center;
+  transition: color 0.3s ease;
 }
 
 .LeftDiv {
-    display: flex;
-    padding: 20px;
-    padding-top: 80px;
-    flex-direction: column;
-    text-align: left;
+  display: flex;
+  padding: 20px;
+  padding-top: 80px;
+  flex-direction: column;
+  text-align: left;
 }
 
 .RightDiv {
-    display: flex;
-    padding: 20px;
-    padding-top: 80px;
-    flex-direction: column;
-    text-align: right;
+  display: flex;
+  padding: 20px;
+  padding-top: 80px;
+  flex-direction: column;
+  text-align: right;
 }
 
 .ImageBoxDiv {
@@ -107,8 +253,306 @@ p {
   box-sizing: border-box;
   align-self: center;
   justify-items: center;
+  padding: 0 20px;
 }
 
 .Space {
-    height: 40px;
+  height: 40px;
+}
+
+.Footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 20px;
+  background-color: var(--main-color-b);
+  color: var(--background-color);
+  margin-top: 40px;
+}
+
+.Footer p {
+  font-size: 1rem;
+  margin: 0;
+}
+
+.Footer img {
+  max-width: 150px;
+  height: auto;
+}
+
+/* Media Queries para Responsividade */
+
+/* Tablets e telas médias */
+@media (max-width: 1200px) {
+  .HomeTitle {
+    font-size: 6rem;
+  }
+
+  .HomeSubtitle {
+    font-size: 1.4rem;
+  }
+
+  .CenteredDiv {
+    gap: 2rem;
+    margin-bottom: 30px;
+  }
+
+  .NavigationButton {
+    padding: 1.5rem 2.5rem;
+    min-width: 180px;
+  }
+
+  .NavigationButton i {
+    font-size: 3rem;
+  }
+
+  .NavigationButton span {
+    font-size: 1.3rem;
+  }
+
+  .ImageBoxDiv {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    padding: 0 15px;
+  }
+
+  .Footer {
+    padding: 15px;
+  }
+
+  .Footer img {
+    max-width: 120px;
+  }
+
+  h1 {
+    font-size: 4rem;
+  }
+
+  h2 {
+    font-size: 2.5rem;
+  }
+
+  p {
+    font-size: 1.5rem;
+  }
+}
+
+/* Tablets pequenos */
+@media (max-width: 768px) {
+  .HomeTitle {
+    font-size: 4.5rem;
+  }
+
+  .HomeSubtitle {
+    font-size: 1.2rem;
+    padding-bottom: 20px;
+  }
+
+  .ColorDiv {
+    padding: 15px;
+    padding-top: 60px;
+  }
+
+  .CenteredDiv {
+    gap: 1.5rem;
+  }
+
+  .NavigationButton {
+    padding: 1.2rem 2rem;
+    min-width: 150px;
+  }
+
+  .NavigationButton i {
+    font-size: 2.5rem;
+  }
+
+  .NavigationButton span {
+    font-size: 1.1rem;
+  }
+
+  .LeftDiv {
+    padding: 15px;
+    padding-top: 60px;
+  }
+
+  .ImageBoxDiv {
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 0 15px;
+  }
+
+  .Footer {
+    padding: 12px;
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .Footer img {
+    max-width: 100px;
+  }
+
+  .Footer p {
+    font-size: 0.9rem;
+  }
+
+  h1 {
+    font-size: 3rem;
+  }
+
+  h2 {
+    font-size: 2rem;
+  }
+
+  p {
+    font-size: 1.25rem;
+  }
+}
+
+/* Dispositivos móveis */
+@media (max-width: 480px) {
+  .HomeTitle {
+    font-size: 3rem;
+  }
+
+  .HomeSubtitle {
+    font-size: 1rem;
+    padding-bottom: 16px;
+  }
+
+  .ColorDiv {
+    padding: 10px;
+    padding-top: 40px;
+  }
+
+  .CenteredDiv {
+    gap: 1rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .NavigationButton {
+    padding: 1rem 1.5rem;
+    min-width: 120px;
+    width: 80%;
+    max-width: 250px;
+  }
+
+  .NavigationButton i {
+    font-size: 2rem;
+  }
+
+  .NavigationButton span {
+    font-size: 1rem;
+  }
+
+  .LeftDiv {
+    padding: 10px;
+    padding-top: 40px;
+    text-align: center;
+  }
+
+  .ImageBoxDiv {
+    grid-template-columns: 1fr;
+    gap: 15px;
+    padding: 0 10px;
+  }
+
+  .Footer {
+    padding: 10px;
+    flex-direction: column;
+    gap: 8px;
+    text-align: center;
+  }
+
+  .Footer img {
+    max-width: 80px;
+  }
+
+  .Footer p {
+    font-size: 0.8rem;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+  }
+
+  h2 {
+    font-size: 1.75rem;
+  }
+
+  p {
+    font-size: 1rem;
+  }
+}
+
+/* Dispositivos muito pequenos */
+@media (max-width: 320px) {
+  .HomeTitle {
+    font-size: 2.5rem;
+  }
+
+  .HomeSubtitle {
+    font-size: 0.9rem;
+  }
+
+  .ColorDiv {
+    padding: 8px;
+    padding-top: 30px;
+  }
+
+  .CenteredDiv {
+    gap: 0.8rem;
+  }
+
+  .NavigationButton {
+    padding: 0.8rem 1.2rem;
+    min-width: 100px;
+    width: 90%;
+    max-width: 200px;
+  }
+
+  .NavigationButton i {
+    font-size: 1.8rem;
+  }
+
+  .NavigationButton span {
+    font-size: 0.9rem;
+  }
+
+  .LeftDiv {
+    padding: 8px;
+    padding-top: 30px;
+  }
+
+  .ImageBoxDiv {
+    padding: 0 8px;
+  }
+
+  .Footer {
+    padding: 8px;
+    flex-direction: column;
+    gap: 6px;
+    text-align: center;
+  }
+
+  .Footer img {
+    max-width: 60px;
+  }
+
+  .Footer p {
+    font-size: 0.7rem;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  p {
+    font-size: 0.9rem;
+  }
 }

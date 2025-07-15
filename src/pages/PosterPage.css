@@ -1,0 +1,80 @@
+@import "https://fonts.googleapis.com/css2?family=Roboto&family=WDXL+Lubrifont+TC&display=swap";
+
+:root {
+  --background-color: #dddddd;
+  --main-color: #10a348;
+  --main-color-b: #108048;
+}
+
+.poster-page {
+  min-height: 100vh;
+  background-color: var(--background-color);
+  font-family: "WDXL Lubrifont TC", sans-serif;
+  padding-top: 80px; /* Espaçamento para evitar que a NavigationBar cubra o conteúdo */
+}
+
+.poster-page h1 {
+  color: var(--main-color);
+  font-size: 5rem;
+  text-align: center;
+  padding: 2rem 0;
+  margin: 0;
+}
+
+.poster-container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+/* Responsividade para diferentes tamanhos de tela */
+@media (max-width: 1200px) {
+  .poster-page h1 {
+    font-size: 4rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .poster-page {
+    padding-top: 70px;
+  }
+
+  .poster-page h1 {
+    font-size: 3rem;
+    padding: 1.5rem 0;
+  }
+
+  .poster-container {
+    padding: 0 15px;
+  }
+}
+
+@media (max-width: 480px) {
+  .poster-page {
+    padding-top: 60px;
+  }
+
+  .poster-page h1 {
+    font-size: 2.5rem;
+    padding: 1rem 0;
+  }
+
+  .poster-container {
+    padding: 0 10px;
+  }
+}
+
+@media (max-width: 320px) {
+  .poster-page {
+    padding-top: 50px;
+  }
+
+  .poster-page h1 {
+    font-size: 2rem;
+    padding: 0.8rem 0;
+  }
+
+  .poster-container {
+    padding: 0 8px;
+  }
+}

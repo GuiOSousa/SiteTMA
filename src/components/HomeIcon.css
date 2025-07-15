@@ -1,32 +1,87 @@
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
 
 .HomeIconDiv {
-    display: flex;
-    flex-direction: column;
-	width: 15vw;
-	padding: 0;
-	border: 0;
-	margin: 0;
-	box-sizing: border-box;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  flex-direction: column;
+  width: 15vw;
+  padding: 0;
+  border: 0;
+  margin: 0;
+  box-sizing: border-box;
+  justify-content: center;
+  align-items: center;
 }
 
 .HomeIcon {
-	height: 200px;
+  height: 150px;
 }
 
 .IconColor {
-    color: var(--background-color);
+  color: var(--background-color);
 }
 
 .IconTitle {
-	color: var(--background-color);
-	font-size: 2.5rem;
-    text-decoration: none;
+  color: var(--background-color);
+  font-size: 2.5rem;
+  text-decoration: none;
 }
 
 .material-icons {
-    color: var(--background-color);
-    font-size: 200px;
+  color: var(--background-color);
+  font-size: 100px;
+}
+
+/* Media Queries para Responsividade do HomeIcon */
+@media (max-width: 1200px) {
+  .HomeIconDiv {
+    width: 18vw;
+  }
+
+  .HomeIcon {
+    height: 180px;
+  }
+
+  .IconTitle {
+    font-size: 2.25rem;
+  }
+
+  .material-icons {
+    font-size: 180px;
+  }
+}
+
+@media (max-width: 768px) {
+  .HomeIconDiv {
+    width: 25vw;
+  }
+
+  .HomeIcon {
+    height: 150px;
+  }
+
+  .IconTitle {
+    font-size: 2rem;
+  }
+
+  .material-icons {
+    font-size: 150px;
+  }
+}
+
+@media (max-width: 480px) {
+  .HomeIconDiv {
+    width: 80vw;
+  }
+
+  .HomeIcon {
+    height: 120px;
+  }
+
+  .IconTitle {
+    font-size: 1.75rem;
+  }
+
+  .material-icons {
+    font-size: 120px;
+  }
 }
